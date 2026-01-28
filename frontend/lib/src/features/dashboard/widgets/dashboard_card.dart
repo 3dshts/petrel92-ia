@@ -2,15 +2,10 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:frontend/src/features/alertas_produccion/pages/alertas_produccion_page.dart';
+
 import 'package:frontend/src/features/buzon/pages/buzon_page.dart';
 import 'package:frontend/src/features/gestion_nominas/pages/gestion_nominas_page.dart';
-import 'package:frontend/src/features/gestion_pedidos/pages/gestion_pedidos_page.dart';
-import 'package:frontend/src/features/intrastat/pages/intrastat_page.dart';
-import 'package:frontend/src/features/inventario/pages/inventario_page.dart';
-import 'package:frontend/src/features/prototipos/pages/prototipos_page.dart';
-import 'package:frontend/src/features/situacion_pedidos/pages/situacion_pedidos_page.dart';
-import 'package:frontend/src/features/notas_fabricacion/pages/notas_fabricacion_page.dart';
+
 import '../../../core/theme/app_theme.dart';
 import '../../../core/common_widgets/helpers/responsive_helper.dart';
 import '../../../core/network/api_logger.dart';
@@ -24,7 +19,7 @@ import '../../../core/network/api_logger.dart';
 // import '../../gestion_nominas/pages/gestion_nominas_page.dart';
 // import '../../intrastat/pages/intrastat_page.dart';
 // import '../../inventario/pages/inventario_page.dart';
-import '../../parte_situacion/pages/parte_situacion_page.dart';
+
 
 /// Tarjeta interactiva del dashboard con navegación a diferentes módulos.
 /// 
@@ -60,15 +55,7 @@ class _DashboardCardState extends State<DashboardCard> {
   /// Mapa de rutas: asocia cada ID con su página correspondiente.
   static final Map<String, Widget Function()> _routes = {
     'buzon': () => const BuzonPage(),
-    'alertas_produccion': () => const AlertasProduccionPage(),
-    'prototipos': () => const PrototiposPage(),
-    'situacion_pedidos': () => const SituacionPedidosPage(),
-    'gestion_pedidos': () => const GestionPedidosPage(),
     'gestion_nominas': () => const GestionNominasPage(),
-    'intrastat': () => const IntrastatPage(),
-    'inventario': () => const InventarioPage(),
-    'parte_situacion': () => const ParteSituacionPage(),
-    'notas_fabricacion': () => const NotasFabricacionPage(),
   };
 
   /// Maneja la navegación según el ID de la tarjeta.

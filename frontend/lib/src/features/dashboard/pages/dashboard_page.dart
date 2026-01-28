@@ -24,36 +24,11 @@ class DashboardPage extends StatelessWidget {
 
   /// Datos de todas las tarjetas disponibles en el dashboard.
   static const List<Map<String, String>> _allCardData = [
-    {'id': 'buzon', 'title': 'BUZÓN', 'icon': 'buzon.svg'},
-    {
-      'id': 'alertas_produccion',
-      'title': 'ALERTAS PRODUCCIÓN',
-      'icon': 'alertas_produccion.svg',
-    },
-    {'id': 'prototipos', 'title': 'PROTOTIPOS', 'icon': 'prototipos.svg'},
-    {
-      'id': 'situacion_pedidos',
-      'title': 'SITUACIÓN PEDIDOS',
-      'icon': 'situacion_pedidos.svg',
-    },
-    {
-      'id': 'gestion_pedidos',
-      'title': 'GESTOR PEDIDOS',
-      'icon': 'gestor_pedidos.svg',
-    },
     {
       'id': 'gestion_nominas',
       'title': 'GESTOR NÓMINAS',
       'icon': 'gestor_nominas.svg',
     },
-    {'id': 'intrastat', 'title': 'INTRASTAT', 'icon': 'intrastat.svg'},
-    {'id': 'inventario', 'title': 'INVENTARIO', 'icon': 'inventario.svg'},
-    {
-      'id': 'parte_situacion',
-      'title': 'PARTE SITUACIÓN',
-      'icon': 'parte_situacion.svg',
-    },
-    {'id': 'notas_fabricacion', 'title': 'NOTAS FABRICACIÓN', 'icon': 'parte_situacion.svg'},
   ];
 
   /// Construye la lista de tarjetas según los permisos del usuario.
