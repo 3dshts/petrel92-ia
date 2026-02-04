@@ -19,8 +19,8 @@ import '../../features/dashboard/pages/dashboard_page.dart';
 /// AppBar personalizado y responsive de la aplicación.
 ///
 /// Diseño por dispositivo:
-/// - **Desktop**: Logo IntegrIA + SUSY-SHOES (centrado) + Usuario + 3 botones
-/// - **Tablet/Móvil**: Logo SUSY-SHOES + Usuario + Menú hamburguesa
+/// - **Desktop**: Logo IntegrIA + PETREL-92 (centrado) + Usuario + 3 botones
+/// - **Tablet/Móvil**: Logo PETREL-92 + Usuario + Menú hamburguesa
 class CustomAppBar extends StatefulWidget implements PreferredSizeWidget {
   const CustomAppBar({super.key});
 
@@ -111,7 +111,7 @@ class _CustomAppBarState extends State<CustomAppBar> {
   Widget _buildDesktopLayout(String username, String fullName) {
     return Stack(
       children: [
-        // Título centrado (SUSY-SHOES SL)
+        // Título centrado (PETREL-92)
         Center(child: _buildCompanyNameDesktop()),
 
         // Contenido principal

@@ -18,7 +18,7 @@ class _ResponsiveDimensions {
 
 /// Textos de la interfaz.
 class _UITexts {
-  static const String companyName = 'SUSY-SHOES SL';
+  static const String companyName = 'PETREL-92 SL';
   static const String title = 'DATASHEET';
   static const String logoSemanticLabel = 'IntegrIA for Business';
 }
@@ -99,7 +99,7 @@ class _AIInfo {
 
 /// Información de licencia.
 class _LicenseInfo {
-  static const String number = 'integria-susyshoes-08-2025';
+  static const String number = 'integria-PETREL92-01-2026';
   static const int maxUsers = 30;
 
   static List<String> get details => [
